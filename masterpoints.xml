@@ -27,12 +27,12 @@
 		  ]);
 
 		  // Create and draw the visualization.
-		  visualization = new google.visualization.Table(document.getElementById('table'));
+		  visualization = new google.visualization.Table(document.getElementById('orgchart'));
 		  visualization.draw(data, null);
 		}		
 
 
-		<h1>Query Wrapper Example</h1>
+		<h1>Table Example</h1>
 		<form action="">
 		  <span> This example uses the following spreadsheet: <br />
 			<a href="https://spreadsheets.google.com/pub?key=rCaVQNfFDMhOM6ENNYeYZ9Q">
