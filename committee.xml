@@ -38,7 +38,7 @@
     google.load('visualization', '1', {'packages' : ['table']});
     google.setOnLoadCallback(init);
 
-    var dataSourceUrl = 'https://spreadsheets.google.com/tq?key=rh_6pF1K_XsruwVr_doofvw&pub=1';
+    var dataSourceUrl = 'http://spreadsheets.google.com/tq?key=0Av6gbBWyyA_wdEVfalVHMmt2SnNQSXJDWkMxSHFtY2c&headers=1&sheet=State Associations';
     var query, options, container;
 
     function init() {
