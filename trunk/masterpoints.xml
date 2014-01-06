@@ -22,7 +22,7 @@
 		  var orgChart = new google.visualization.OrgChart(container);
 		  query && query.abort();
 		  query = new google.visualization.Query(dataSourceUrl + queryString);
-		  var queryWrapper = new QueryWrapper(query, orgChart, {'size': 'large'}, container);
+		  var queryWrapper = new TableQueryWrapper(query, orgChart, {'size': 'large'}, container);
 		  queryWrapper.sendAndDraw();
 		}
 		</script>
