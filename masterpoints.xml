@@ -30,7 +30,7 @@
 		  visualization = new google.visualization.Table(document.getElementById('orgchart'));
 		  visualization.draw(data, null);
 		}		
-
+		</script>
 
 		<h1>Table Example</h1>
 		<form action="">
