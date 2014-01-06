@@ -11,10 +11,25 @@
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		<script type="text/javascript">
 		google.load('visualization', '1', {'packages' : ['orgchart']});
-		google.setOnLoadCallback(function() { sendAndDraw('') });
+		//google.setOnLoadCallback(function() { sendAndDraw('') });
+		google.setOnLoadCallback(function() { drawVisualization() });
 
 		var dataSourceUrl = 'https://spreadsheets.google.com/tq?key=rCaVQNfFDMhOM6ENNYeYZ9Q&pub=1';
 		var query;
+		
+		function drawVisualization() {
+		  // Create and populate the data table.
+		  var data = google.visualization.arrayToDataTable([
+			['Name', 'Height', 'Smokes'],
+			['Tong Ning mu', 174, true],
+			['Huang Ang fa', 523, false],
+			['Teng nu', 86, true]
+		  ]);
+
+		  // Create and draw the visualization.
+		  visualization = new google.visualization.Table(document.getElementById('table'));
+		  visualization.draw(data, null);
+		}		
 
 		function sendAndDraw(queryString) {
 		  var container = document.getElementById('orgchart');
