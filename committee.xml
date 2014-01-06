@@ -24,7 +24,7 @@
 	</p>
 	<form action="">
 	  Number of rows to show:
-	  <select onChange="setOption('pageSize', parseInt(this.value, 10))">
+	  <select onChange="setOption('pageSize', parseInt(this.value, 100))">
 		<option value="0">0</option>
 		<option value="3">3</option>
 		<option selected=selected value="5">5</option>
@@ -116,7 +116,7 @@ var TableQueryWrapper = function(query, container, options) {
   options['page'] = 'event';
   options['showRowNumber'] = true;
   var buttonConfig = 'pagingButtonsConfiguration';
-  options[buttonConfig] = options[buttonConfig] || 'both';
+  options[buttonConfig] = options[buttonConfig] || 'auto';
   options['pageSize'] = (options['pageSize'] > 0) ? options['pageSize'] : 100;
   this.pageSize = options['pageSize'];
   this.tableOptions = options;
