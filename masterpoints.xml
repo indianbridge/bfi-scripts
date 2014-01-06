@@ -9,7 +9,7 @@
   <Content type="html">
     <![CDATA[
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-		<script type="text/javascript" src="http://bfi-scripts.googlecode.com/svn/trunk/querywrapper.js"></script>
+		<script type="text/javascript" src="https://bfi-scripts.googlecode.com/svn/trunk/querywrapper.js"></script>
 		<script type="text/javascript">
 		google.load('visualization', '1', {'packages' : ['orgchart']});
 		google.setOnLoadCallback(function() { sendAndDraw('') });
