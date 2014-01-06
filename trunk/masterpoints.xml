@@ -10,9 +10,12 @@
     <![CDATA[
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		<script type="text/javascript">
-		google.load('visualization', '1', {'packages' : ['orgchart']});
-		//google.setOnLoadCallback(function() { sendAndDraw('') });
-		google.setOnLoadCallback(function() { drawVisualization() });
+		_IG_RegisterOnloadHandler(loadVisualizationAPI);
+		function loadVisualizationAPI() {
+			google.load('visualization', '1', {'packages' : ['orgchart']});
+			//google.setOnLoadCallback(function() { sendAndDraw('') });
+			google.setOnLoadCallback(drawVisualization);
+		}
 
 		var dataSourceUrl = 'https://spreadsheets.google.com/tq?key=rCaVQNfFDMhOM6ENNYeYZ9Q&pub=1';
 		var query;
